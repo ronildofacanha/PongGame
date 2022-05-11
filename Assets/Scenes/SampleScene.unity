@@ -320,8 +320,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7828577439651009546, guid: 8f361527bc01b664db1f8db8dd5ba440, type: 3}
+      propertyPath: randX.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7828577439651009546, guid: 8f361527bc01b664db1f8db8dd5ba440, type: 3}
+      propertyPath: randX.y
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7828577439651009546, guid: 8f361527bc01b664db1f8db8dd5ba440, type: 3}
+      propertyPath: randY.x
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7828577439651009546, guid: 8f361527bc01b664db1f8db8dd5ba440, type: 3}
+      propertyPath: randY.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7828577439651009546, guid: 8f361527bc01b664db1f8db8dd5ba440, type: 3}
       propertyPath: speedBall
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f361527bc01b664db1f8db8dd5ba440, type: 3}

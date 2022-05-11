@@ -8,6 +8,11 @@ public class BallBase : MonoBehaviour
     Vector3 speed = new Vector3(1, 1, 0);
 
     public string keyToCheck = "Player";
+
+    [Header("Rand")]
+    public Vector2 randX = new Vector2(1, 10);
+    public Vector2 randY = new Vector2(1, 30);
+
     void Update()
     {
         transform.Translate((speed * Time.deltaTime)* speedBall);
@@ -16,8 +21,25 @@ public class BallBase : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == keyToCheck)
-            speed.x = speed.x * -1;
+            onPlayerCollision();
         else
-            speed.y = speed.y * -1;
+            speed.y *= -1;
     }
+
+
+    private void onPlayerCollision()
+    {
+        speed.x *= -1;
+
+        float rand = Random.Range(randX.x, randX.y);
+
+        if (speed.x < 0)
+            rand = -rand;
+
+        speed.x = rand;
+
+        rand = Random.Range(randY.x, randY.y);
+        speed.y = rand;
+    }
+
 }
